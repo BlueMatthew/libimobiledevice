@@ -441,7 +441,7 @@ void instproxy_status_get_current_list(plist_t status, uint64_t* total, uint64_t
  * Gets progress in percentage from a status if available.
  *
  * @param status The dictionary status response to use.
- * @param name Pointer to store the progress in percent (0-100) or -1 if not
+ * @param percent Pointer to store the progress in percent (0-100) or -1 if not
  *        progress was found in the status.
  */
 void instproxy_status_get_percent_complete(plist_t status, int *percent);
@@ -487,7 +487,7 @@ void instproxy_client_options_free(plist_t client_options);
  * Queries the device for the path of an application.
  *
  * @param client The connected installation proxy client.
- * @param appid ApplicationIdentifier of app to retrieve the path for.
+ * @param bundle_id ApplicationIdentifier of app to retrieve the path for.
  * @param path Pointer to store the device path for the application
  *        which is set to NULL if it could not be determined.
  *

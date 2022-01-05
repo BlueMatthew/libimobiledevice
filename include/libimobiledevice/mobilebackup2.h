@@ -180,7 +180,7 @@ mobilebackup2_error_t mobilebackup2_version_exchange(mobilebackup2_client_t clie
 /**
  * Send a request to the connected mobilebackup2 service.
  *
- * @param client
+ * @param client The MobileBackup client to use.
  * @param request The request to send to the backup service.
  *     Currently, this is one of "Backup", "Restore", "Info", or "List".
  * @param target_identifier UDID of the target device.
